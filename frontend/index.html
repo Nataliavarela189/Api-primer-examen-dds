@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Motos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-4">
+    <h1 class="mb-4 text-center">Gestión de Motos</h1>
+
+    <div class="row mb-3">
+        <div class="col-md-6 offset-md-3">
+            <div class="input-group">
+                <input type="text" id="inputBuscar" class="form-control" placeholder="Buscar por Marca...">
+                <button type="button" id="btnBuscar" class="btn btn-primary">Buscar</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="motosListContainer">
+        <table class="table table-bordered table-striped">
+            <thead class="table-dark">
+                <tr>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Año</th>
+                    <th>Cilindrada</th>
+                    <th>Fecha Ingreso</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody id="motosTbody">
+            </tbody>
+        </table>
+        <p id="mensajeVacio" style="display: none;" class="text-center">No se encontraron Motos.</p>
+    </div>
+</div>
+<script src="scripts/scripts.js"></script>
+</body>
+</html>
